@@ -1,0 +1,45 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment files
+.env
+*.env
+
+# Credentials
+credential.py
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# VSCode settings (if applicable)
+.vscode/
+
+# Mac system files
+.DS_Store
+
+# Output data or logs
+/output/
+*.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Pipenv files
+Pipfile.lock
+
+# OS files
+Thumbs.db
+
+# Compiled C extensions
+*.so
+
+# Package distributions
+*.egg
+*.egg-info/
+dist/
+build/
