@@ -7,7 +7,7 @@ import pyodbc as odbc
 from credential import username, password, server, database    # Assuming credential.py contains your database credentials
 # Load environment variables from .env file
 load_dotenv('/Users/varrue/.cache/kagglehub/datasets/rodsaldanha/Marketing-campaign/versions/8/azure.env')
-
+# Updated for GitHub push test
 
 # --------------------------------------EXTRACT the dataset from CSV------------------------------------
 # Read the CSV file
@@ -21,7 +21,7 @@ from datetime import datetime
 df['Age'] = datetime.now().year - df['Year_Birth']
 
 
-# Create age groups
+# Creates age groups
 # Note: Customers younger than 18 are excluded from the age groups.
 df['Age_Group'] = pd.cut(df['Age'], bins=[18, 30, 45, 60, 100], labels=['18-30', '31-45', '46-60', '61+'])
 
@@ -82,7 +82,7 @@ connection_string= (
     "TrustServerCertificate=no;"
     "Connection Timeout=60;"
 )
-conn = odbc.connect(connection_string)
+
 
 print(f"Connecting to server: {server}, database: {database}")
 
@@ -109,11 +109,9 @@ except Exception as e:
     print("Connection failed or data load failed:")
     print(e)
 
-# Load data into MySQL table - for use wuth MYSQL ONLY
-#df.to_sql(name='clean_campaign_data', con=engine, if_exists='replace', index=False)
 
 # Load data to CSV saved locally
-# Define the directory for saving the file
+# Defines the directory for saving the file
 output_directory = '/Users/varrue/Documents/Marketing Campaign Project' 
 os.makedirs(output_directory, exist_ok=True)  # Create the directory if it doesn't exist
 
