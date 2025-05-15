@@ -1,0 +1,6 @@
+dotenv==0.9.9
+pandas==2.2.3
+pyodbc==5.2.0
+SQLAlchemy==2.0.40
+credential==0.0.2
+python_version >= 3.10
