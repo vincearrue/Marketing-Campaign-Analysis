@@ -67,7 +67,7 @@ df.rename(columns={
     'Complain': 'Customer_Complaint'
 }, inplace=True)
 
-# ---------------------------------------LOAD the dataset into MySQL------------------------------------
+# ---------------------------------------LOAD the dataset into Azure SQL DB------------------------------------
 # Create a connection to the Azure SQL Database
 server = 'marketing-server-1.database.windows.net'
 database = 'marketing_campaign'
