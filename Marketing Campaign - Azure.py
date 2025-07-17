@@ -4,7 +4,7 @@ from sqlalchemy import create_engine
 from dotenv import load_dotenv
 import os
 import pyodbc as odbc
-from credential import username, password, server, database    # Assuming credential.py contains your database credentials
+from credential import username, password, server, database  
 # Load environment variables from .env file
 load_dotenv('/Users/varrue/.cache/kagglehub/datasets/rodsaldanha/Marketing-campaign/versions/8/azure.env')
 # Updated for GitHub push test
